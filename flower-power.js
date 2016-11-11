@@ -9,6 +9,8 @@ document.onkeydown=function(e){
   }
 }
 
+document.addEventListener("touchstart", renderNewFlower, false);
+
 function randomRange(min, max) {
   return Math.random() * (max - min) + min;
 }
