@@ -116,10 +116,9 @@ function renderNewFlower() {
                                       .attr("width", "100%")
                                       .attr("height", "100%")
                                       .attr("style", "position:absolute;");
-  var svgDom = svgContainer[0][0];
 
   // random seeds
-  var center = {"x": randomRange(20, svgDom.clientWidth), "y": randomRange(20, svgDom.clientHeight)};
+  var center = {"x": randomRange(20, window.innerWidth), "y": randomRange(20, window.innerHeight)};
   var petalSize = randomRange(1, 3);
   var centerSize = petalSize * randomRange(2, 8);
   var petalCount = randomInt(4 + (3-petalSize), 10);
